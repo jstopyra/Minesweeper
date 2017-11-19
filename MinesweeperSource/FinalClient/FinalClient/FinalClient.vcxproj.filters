@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{5f9af736-f28d-40bd-a4a0-727f430f8bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\EventSystem">
+      <UniqueIdentifier>{54614ddd-f512-4f9e-80a6-e79979ae9e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\EventSystem\Events">
+      <UniqueIdentifier>{c6264e76-f57a-4267-9394-67776cd1bd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameScenes">
+      <UniqueIdentifier>{46f03833-4d1c-4f27-9c30-645a785f1bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameScenes\Scenes">
+      <UniqueIdentifier>{f1cc2a27-3040-4ff9-b7ee-9fbe02484102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{824ee70a-f29b-43b7-9b90-eb2f85c6194b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network\Proto">
+      <UniqueIdentifier>{b662debc-b149-4517-9768-8c8e4198eee1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\EventSystem\EventSystem.cpp">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes\GameScene.cpp">
+      <Filter>Source Files\GameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes\Scenes\LoginScreen.cpp">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Networker.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protobuf\ProtoMessages.pb.cc">
+      <Filter>Source Files\Network\Proto</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes\Scenes\LobbyScene.cpp">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes\Scenes\LoadingScene.cpp">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScenes\Scenes\RoomScene.cpp">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Texture.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Event.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\EventSystem.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\EventListener.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\EventTypes.h">
+      <Filter>Utilities\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Macros.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\InputKeyDown.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\InputKeyUp.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\InputKeyEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\InputEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes\GameScene.h">
+      <Filter>Source Files\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes\Scenes\LoginScreen.h">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Networker.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\protobuf\ProtoMessages.pb.h">
+      <Filter>Source Files\Network\Proto</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\ServerResponseEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes\Scenes\LobbyScene.h">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\MouseClickEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\EventSystem\Events\CloseClientEvent.h">
+      <Filter>Utilities\EventSystem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes\Scenes\LoadingScene.h">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScenes\Scenes\RoomScene.h">
+      <Filter>Source Files\GameScenes\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

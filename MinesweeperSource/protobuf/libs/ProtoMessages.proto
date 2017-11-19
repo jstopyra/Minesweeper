@@ -1,0 +1,142 @@
+// See README.txt for information and build instructions.
+//
+// Note: START and END tags are used in comments to define sections used in
+// tutorials.  They are not part of the syntax for Protocol Buffers.
+//
+// To get an in-depth walkthrough of this file and the related examples, see:
+// https://developers.google.com/protocol-buffers/docs/tutorials
+
+// [START declaration]
+syntax = "proto3";
+package Proto;
+// [END declaration]
+
+// [START messages]
+
+message Square {
+	int32 squareType = 1;
+}
+
+message Map {
+	int32 numExposedSquares = 1;
+	int32 mapWidth = 2;
+	int32 mapHeight = 3;
+	repeated Square squares = 4;
+}
+enum GameState
+{
+		NONE = 0;
+		LOGIN = 1;
+		LOBBY = 2;
+		GAME = 3;
+		OVER = 4;
+}
+message ServerResponse
+{
+	
+	LoginResponse loginResponse = 1;
+	PlayerList playerList = 2;
+	GameState gameState = 3;
+	BoardUpdate boardUpdate = 4;
+	GameOver gameOver = 5;
+	LobbyUpdate lobbyUpdate = 6;
+	RoomUpdate roomUpdate = 7;
+}
+
+message RoomUpdate
+{
+	PlayerList playerList = 1;
+	Map mapUpdate = 2;
+}
+
+//Updating the lobby when it was changed(player joined/left, room got opened/closed)
+message LobbyUpdate
+{
+	PlayerList playerList = 1;
+	RoomList roomList = 2;
+}
+
+message RoomList
+{
+	int32 numRooms = 1;
+}
+
+message PlayerInfo
+{
+	string name = 1;
+	int32 score = 2;
+}
+
+message LoginResponse
+{
+	int32 token = 1;
+}
+
+message BoardUpdate
+{
+	Map map = 1;
+}
+
+
+message PlayerList
+{
+	repeated PlayerInfo playerInfo = 1;
+}
+
+message GameOver
+{
+	PlayerList playerList = 1;
+	Map map = 2;
+}
+
+message ClientRequest
+{
+	LoginRequest loginRequest = 1;
+	CreateRoomRequest createRoom = 2;
+	JoinRoomRequest joinRoom = 3;
+	QuitGameRequest quitGame = 4;
+	TileClickedRequest tileClicked = 5;
+	TestRequest testRequest = 6;
+	QuitRoom quitRoom = 7;
+}
+
+message QuitRoom
+{
+	int32 token = 1;
+}
+
+message TestRequest
+{
+	int32 token = 1;
+}
+
+message QuitGameRequest
+{
+	int32 token = 1;
+}
+
+message TileClickedRequest
+{
+	int32 token = 1;
+	int32 tileIndex = 2;
+}
+
+message JoinRoomRequest
+{
+	int32 token = 1;
+	int32 roomNumber = 2;
+}
+
+message CreateRoomRequest
+{
+	int32 token = 1;
+	
+}
+
+message LoginRequest
+{
+	string login = 1;
+	string password = 2;
+}
+
+// [END messages]

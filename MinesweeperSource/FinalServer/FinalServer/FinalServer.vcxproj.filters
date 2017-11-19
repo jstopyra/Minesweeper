@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{84fb2461-1511-44c6-bc1f-829401da3034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{efc7828e-3495-4047-98e3-6ec8fa900b5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{972cbdba-d9c7-4eb0-b12e-82f2dfce8f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisStud">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\protobuf\ProtoMessages.pb.h">
+      <Filter>VisStud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Network\Networker.h">
+      <Filter>Source Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Data\Database.h">
+      <Filter>Source Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Lobby.h">
+      <Filter>Source Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Logic\Room.h">
+      <Filter>Source Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\VisStud\stdafx.h">
+      <Filter>VisStud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\VisStud\targetver.h">
+      <Filter>VisStud</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\protobuf\ProtoMessages.pb.cc">
+      <Filter>VisStud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Data\Database.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Lobby.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Logic\Room.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\VisStud\stdafx.cpp">
+      <Filter>VisStud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Network\Networker.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
